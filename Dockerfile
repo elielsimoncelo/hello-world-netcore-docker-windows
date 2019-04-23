@@ -10,4 +10,4 @@ WORKDIR /opt
 COPY ./src/bin/Release/netcoreapp2.2/publish/ hello-world-docker-windows/
 
 # Informa o que será executado dentro do nosso container
-ENTRYPOINT ["dotnet", "opt/hello-world-docker-windows/HelloWorld.dll"]
+ENTRYPOINT ["dotnet", "/opt/hello-world-docker-windows/HelloWorld.dll"]
